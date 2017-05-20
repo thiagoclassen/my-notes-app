@@ -1,0 +1,11 @@
+<div class="note">
+    <h1>{{note.title}}</h1>
+    <p ng-hide="noteCtrl.edit">{{note.note}}</p>
+    <textarea ng-model="note.note" ng-show="noteCtrl.edit"></textarea>
+    
+    <ul ng-hide="noteCtrl.edit">
+        <li><a ng-click="noteCtrl.editNote($index)" href>Edit Note</a></li>
+        <li><a ng-click="noteCtrl.deleteNote($index)" href>Delete Note</a></li>
+    </ul>    
+    <button ng-show="noteCtrl.edit" ng-click="noteCtrl.confirmEdit()">Confirm</button>
+</div>

@@ -1,0 +1,155 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ *  Header
+ */
+
+.nav{   
+    background-color: dimgrey;    
+    position: absolute;
+    width: 100%;
+    top: 0px;         
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+  color: whitesmoke;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+/*
+ *  Content
+ */
+
+.page {
+    background-color: black;
+    position: absolute;
+    top: 40px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;   
+}
+
+/*
+ *  Note
+ */
+ 
+.noteBlock{
+    display: inline-block;
+}
+
+.note{
+    display: inline-block;
+    background-color: green;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.note h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.note p{
+    color: white;
+    margin: 12px;
+}
+
+.note ul{
+    align-content: center;    
+}
+
+.note li{
+    display: inline;    
+}
+
+.note a{
+    color: skyblue;
+}
+
+.note textarea{
+    margin: 0px 12px 12px 12px;
+    width: 90%;
+    height: 270px;  
+    resize: none;
+}
+
+.note button{
+    margin-left: 12px;
+}
+
+
+/*
+ *  Modals
+ */
+
+div.m-modals {
+	background-color: rgba( 0, 0, 0, 0.8 ) ;
+	bottom: 0px ;
+	left: 0px ;
+	position: fixed ;
+	right: 0px ;
+	top: 0px ;
+}
+
+div.m-modals.ng-hide {
+	background-color: rgba( 0, 0, 0, 0 );
+}
+
+.modal li{
+    display: inline;    
+}
+
+.modal textarea{
+    margin: 0px 12px 12px 12px;
+    width: 90%;
+    height: 250px;  
+    resize: none;
+}
+
+div.m-modals.ng-hide-add.ng-hide-add-active,
+div.m-modals.ng-hide-remove.ng-hide-remove-active {
+	transition: 250ms ease all ;
+}
+
+div.m-modals > .modal {
+	background-color: #FAFAFA ;
+	border-radius: 3px 3px 3px 3px ;	
+    width: 400px;
+    height: 400px;
+	padding: 20px 20px 20px 20px ;
+	position: fixed ;
+	left: 50% ;
+	margin-left: -200px ;
+	top: 200px ;
+	width: 400px ;
+}
+
+div.m-modals.ng-hide > .modal.ng-enter {
+	top: -200px ;
+	transition: 250ms ease top ;
+}
+
+div.m-modals.ng-hide > .modal.ng-enter.ng-enter-active {
+	top: 200px ;
+}
+
+a.jump {
+	color: #999999 ;
+}
+
+a.jump:hover {
+	background-color: gold ;
+	color: #000000 ;
+}

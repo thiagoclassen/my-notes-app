@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myNotesApp">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css\application.css" />
+</head>
+
+<body ng-controller="myNotesController as myNotes">
+    <div class="nav">
+        <ul class="container">
+            <li><a ng-click="myNotes.promptSomething()" href>NEW NOTE</a></li>            
+        </ul>
+    </div>
+
+    <div class="page">
+
+        <div class="noteBlock" ng-repeat="note in myNotes.notes">
+            <note></note>
+        </div>
+
+    </div>
+    
+    <bn-modals></bn-modals>
+
+    <script type="text/javascript" src="node_modules\angular\angular.min.js"></script>
+    <!--<script type="text/javascript" src="node_modules\angular-animate\angular-animate.min.js"></script>-->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="directives\note.js"></script>
+    <script type="text/javascript" src="directives\note.js"></script>
+    <script type="text/javascript" src="service\dataService.js"></script>
+    
+    
+    <script type="text/javascript" src="modal\modal-service.js"></script>
+    <script type="text/javascript" src="modal\modal-directive.js"></script>
+    <script type="text/javascript" src="modal\modal-controller.js"></script>    
+</body>
+
+</html>
